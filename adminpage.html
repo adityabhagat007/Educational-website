@@ -1,0 +1,42 @@
+<DOCTYPE HTML>
+    <html>
+        <head>
+            <title>adimin/portal/smartedu</title>
+            <link rel="stylesheet" type="text/css" href="css/adminmakeover.css">
+            <script src="https://kit.fontawesome.com/ec931c6b7f.js" crossorigin="anonymous"></script>
+        </head>
+        <body>
+            <div class="mar">
+                <div class="image"><img src="images/logo.png"></div><hr>
+            </div>
+            <div class="login">
+                <div class="admin"><h4><u>ADMIN PANEL</u></h4></div>
+            </div>
+               <div class="login_container">
+               <div class="login_box">
+                   <h1>Login</h1>
+                   <form action="admin.py" method="post"> 
+                       <div class="user">
+                           <input type="text" id="txt" placeholder="username" name="name" onkeyup="manage(this)" required> 
+                       </div>
+                       <div class="user">
+                           <input type="password" id="txt" placeholder="password" name="password" onkeyup="manage(this)" required>
+                       </div>
+					   <input type="submit" id="btSubmit" disabled  value="submit">
+                   </form>
+               </div>
+            </div>
+        </body>
+		      <script>
+	function manage(txt) {
+        var bt = document.getElementById('btSubmit');
+        if (txt.value != '') {
+            bt.disabled = false;
+        }
+        else {
+            bt.disabled = true;
+        }
+    }    
+         </script>
+    </html>
+</DOCTYPE>

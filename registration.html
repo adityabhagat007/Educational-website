@@ -1,0 +1,54 @@
+<DOCTYPE HTMl>
+    <html>
+        <head>
+            <title>smartEDu.registration</title>
+            <link rel="stylesheet" type="text/css" href="css/regmakeover.css">
+            <script src="https://kit.fontawesome.com/ec931c6b7f.js" crossorigin="anonymous"></script>
+        </head>
+        <body>
+            <div class="registration">
+                <div class="reg_box">
+                    <h1>Registration</h1>
+                    <form action="registration2.py" method="post">
+                        <div class="use">
+                            <input type="text" id="txt" name="name" placeholder="Name" onkeyup="manage(this)" required><br>
+                        </div>
+                         <div class="use">
+                            <input type="text" id="txt" name="stream" placeholder="Stream" onkeyup="manage(this)" required><br>
+                        </div>
+                         <div class="use">
+                            <input type="text"  id="txt" name="email" placeholder="Email" onkeyup="manage(this)" required><br>
+                        </div>
+                         <div class="use">
+                            <input type="text" id="txt" name="age" placeholder="Age" onkeyup="manage(this)" required>
+                        </div>
+                         <div class="use">
+                            <input type="text" id="txt" name="course" placeholder="Course" onkeyup="manage(this)" required><br>
+                        </div>
+                        <div class="use">
+                            <input type="text" id="txt" name="number" placeholder="number" onkeyup="manage(this)" required><br>
+                        </div>
+						<div class="use">
+                            <input type="text" id="txt" name="username" placeholder="username" onkeyup="manage(this)" required><br>
+                        </div>
+						<div class="use">
+                            <input type="text" id="txt" name="password" placeholder="Password" onkeyup="manage(this)" required><br>
+                        </div>
+                        <div class="submit"><input type="submit"   id="btSubmit" disabled  value="Register"></div>
+                    </form>
+                </div>
+            </div>
+        </body>
+		      <script>
+	function manage(txt) {
+        var bt = document.getElementById('btSubmit');
+        if (txt.value != '') {
+            bt.disabled = false;
+        }
+        else {
+            bt.disabled = true;
+        }
+    }    
+         </script>
+    </html>
+</DOCTYPE>
